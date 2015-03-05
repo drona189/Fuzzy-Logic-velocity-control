@@ -1,5 +1,12 @@
-//#define maxPWM 139
-//#define minPWM 16
+/* This code runs on Qt.
+It takes pulse signal from microcontroller through serial I/O.
+Uses Fuzzy Logic to generate value for velocity control.
+
+*/
+
+
+
+
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -9,6 +16,7 @@
 #include <QMenuBar>
 #include <QDebug>
 
+// Fuzzy logic Variables
 float NB=  -15;
 float NM = -10;
 float NS = -7;
